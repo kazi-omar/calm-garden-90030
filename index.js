@@ -8,7 +8,8 @@ app.use(cors());
 app.get("/", async (req, res) => {
   const snapshot = await Countries.get();
   const list = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-  res.send(list);
+  res.send("hello");
+  //res.send(list);
 });
 
 app.post("/create", async (req, res) => {
