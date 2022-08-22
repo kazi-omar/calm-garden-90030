@@ -1,0 +1,35 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sourcenext.minnanofudeoh",
+      "sha256_cert_fingerprints": [
+        "97:9B:4D:BB:43:28:F2:D0:77:CF:0D:EE:30:45:51:EB:94:E4:72:2E:FF:33:A8:24:AD:47:DC:19:85:E0:69:BE",
+        "9E:0B:80:23:22:E4:1F:71:67:00:1F:22:48:3F:B9:28:7C:89:D7:3C:1F:35:10:1F:4F:7F:82:C1:EC:53:74:18"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pocketalk.android.pt.translation.stg",
+      "sha256_cert_fingerprints": [
+        "AF:FC:04:F9:C7:D6:CF:89:B3:EB:DE:65:10:9A:59:9D:1B:AD:2A:0A:41:5E:76:1D:2F:04:D5:7A:5A:96:AF:D6",
+        "30:B1:BF:C1:56:EE:7E:D6:F1:59:A1:BD:9B:F8:73:70:86:3E:E3:3B:67:F5:E5:1C:C9:1F:18:29:DC:57:83:5D"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pocketalk.android.pt.translation",
+      "sha256_cert_fingerprints": [
+        "22:29:66:68:DC:9B:93:6E:53:A4:CE:71:0E:61:94:B8:FE:8C:76:39:99:45:0C:F0:A4:E3:34:64:BB:D8:1F:1C",
+        "30:B1:BF:C1:56:EE:7E:D6:F1:59:A1:BD:9B:F8:73:70:86:3E:E3:3B:67:F5:E5:1C:C9:1F:18:29:DC:57:83:5D"
+      ]
+    }
+  }
+]

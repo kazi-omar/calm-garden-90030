@@ -18,6 +18,18 @@ app.get("/", async (req, res) => {
     `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=${serial}`
   );
 });
+//todo stage
+app.get("/redirect_stage", async (req, res) => {
+  //res.send("hello");
+  const serial = req.query.serial;
+  res.redirect(`/sl/ptapp-serial_test?serial=${serial}`);
+});
+//todo production
+app.get("/redirect_production", async (req, res) => {
+  //res.send("hello");
+  const serial = req.query.serial;
+  res.redirect(`/sl/ptapp-serialt?serial=${serial}`);
+});
 
 app.post("/create", async (req, res) => {
   const data = req.body;

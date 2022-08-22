@@ -1,0 +1,23 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "L39D7LSFLU.com.pocketalk.ios.pt.translation",
+        "components": [
+          {
+            "/": "/cp/ptapp-softbank_test/launch/*"
+          },
+          {
+            "/": "/cp/ptapp-softbank/launch/*"
+          },
+          {
+            "/": "/sl/ptapp-serial_test/*"
+          },
+          {
+            "/": "/sl/ptapp-serial/*"
+          }
+        ]
+      }
+    ]
+  }
+}
