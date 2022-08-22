@@ -22,7 +22,8 @@ app.get("/", async (req, res) => {
 app.get("/redirect_stage", async (req, res) => {
   //res.send("hello");
   const serial = req.query.serial;
-  res.redirect(`/sl/ptapp-serial_test?serial=${serial}`);
+  res.redirect(req.baseUrl + `/sl/ptapp-serial_test?serial=${serial}`);
+  // res.redirect(`/sl/ptapp-serial_test?serial=${serial}`);
 });
 //todo production
 app.get("/redirect_production", async (req, res) => {
