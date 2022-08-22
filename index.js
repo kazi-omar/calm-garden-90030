@@ -12,7 +12,10 @@ app.use(cors());
 // });
 
 app.get("/", async (req, res) => {
-  res.send("hello");
+  //res.send("hello");
+  res.redirect(
+    "https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=DHPFS-3500-5800-7400-4401"
+  );
 });
 
 app.post("/create", async (req, res) => {
