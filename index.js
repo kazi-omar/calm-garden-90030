@@ -15,7 +15,7 @@ app.get("/", async (req, res) => {
   //res.send("hello");
   const serial = req.query.serial;
   res.redirect(
-    `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=+${serial}`
+    `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=${serial}`
   );
 });
 
