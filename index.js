@@ -14,7 +14,7 @@ app.use(cors());
 app.get("/", async (req, res) => {
   //res.send("hello");
   const serial = req.query.serial;
-  res.redirect(
+  res.send(
     `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=${serial}`
   );
 });
