@@ -13,8 +13,9 @@ app.use(cors());
 
 app.get("/", async (req, res) => {
   //res.send("hello");
+  const serial = req.query.serial;
   res.redirect(
-    "https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=DHPFS-3500-5800-7400-4401"
+    `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=+${serial}`
   );
 });
 
