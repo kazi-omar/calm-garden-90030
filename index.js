@@ -4,6 +4,7 @@ const Countries = require("./config");
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static("public"));
 
 // app.get("/", async (req, res) => {
 //   const snapshot = await Countries.get();
@@ -17,19 +18,6 @@ app.get("/", async (req, res) => {
   res.redirect(
     `https://pocketalks.bjitgroup.com/sl/ptapp-serial/?serial=${serial}`
   );
-});
-//todo stage
-app.get("/redirect_stage", async (req, res) => {
-  //res.send("hello");
-  const serial = req.query.serial;
-  res.redirect(req.baseUrl + `/sl/ptapp-serial_test?serial=${serial}`);
-  // res.redirect(`/sl/ptapp-serial_test?serial=${serial}`);
-});
-//todo production
-app.get("/redirect_production", async (req, res) => {
-  //res.send("hello");
-  const serial = req.query.serial;
-  res.redirect(`/sl/ptapp-serialt?serial=${serial}`);
 });
 
 app.post("/create", async (req, res) => {

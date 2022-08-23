@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        event.preventDefault();
+
+        function json1(name, capital, region, flags) {
+          this.name = name;
+          this.capital = capital;
+          this.region = region;
+          this.flags = flags;
+        }
+
+        id_list = Array();
+        id_list.push(
+          new json1("India", "Delhi", "asia", "https://flagcdn.com/w320/ph.png")
+        );
+        id_list.push(
+          new json1(
+            "Hong Kong",
+            "tokyo",
+            "asia",
+            "https://flagcdn.com/w320/ph.png"
+          )
+        );
+        id_list.push(
+          new json1("India", "Delhi", "asia", "https://flagcdn.com/w320/ph.png")
+        );
+        id_list.push(
+          new json1(
+            "Hong Kong",
+            "tokyo",
+            "asia",
+            "https://flagcdn.com/w320/ph.png"
+          )
+        );
+        id_list.push(
+          new json1("India", "Delhi", "asia", "https://flagcdn.com/w320/ph.png")
+        );
+
+        id_list = JSON.stringify(id_list);
+        document.write(id_list);
+      });
+    </script>
+  </head>
+</html>
